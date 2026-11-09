@@ -1,5 +1,6 @@
 import { ShieldCheck } from "lucide-react";
 import { redirect } from "next/navigation";
+import { AdminConsoleLogin } from "@/features/admin/components/admin-console-login";
 import { AdminLoginForm } from "@/features/admin/components/admin-login-form";
 import { getCurrentAdmin } from "@/lib/admin/context";
 
@@ -23,6 +24,7 @@ export default async function AdminAuthPage() {
       <div className="bg-card ring-foreground/10 w-full max-w-sm rounded-xl p-6 ring-1">
         <AdminLoginForm />
       </div>
+      <AdminConsoleLogin />
     </div>
   );
 }
